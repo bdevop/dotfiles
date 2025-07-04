@@ -126,3 +126,4 @@ compdef k=kubectl
 alias ytd="/Applications/yt-dlp_macos"
 export PATH=$PATH:/usr/local/share/dotnet
 alias go='/Users/$USER/sdk/go1.24.4/bin/go'
+alias chemzoi="/home/$USER/.local/bin/chezmoi"
