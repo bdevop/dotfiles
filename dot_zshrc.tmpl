@@ -109,6 +109,7 @@ fi
 # linux specific configuration
 {{ if eq .chezmoi.os "linux" }}
 alias k="/usr/bin/kubectl"
+alias chezmoi="/home/$USER/.local/bin/chezmoi"
 {{ end }}
 
 # macos specific configuration
@@ -131,6 +132,4 @@ compdef k=kubectl
 alias ytd="/Applications/yt-dlp_macos"
 export PATH=$PATH:/usr/local/share/dotnet
 alias go='/Users/$USER/sdk/go1.24.4/bin/go'
-alias chezmoi="/home/$USER/.local/bin/chezmoi"
 {{ end }}
-
