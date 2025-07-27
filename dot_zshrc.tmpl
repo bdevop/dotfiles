@@ -110,6 +110,7 @@ fi
 {{ if eq .chezmoi.os "linux" }}
 alias k="/usr/bin/kubectl"
 alias chezmoi="/home/$USER/.local/bin/chezmoi"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 {{ end }}
 
 # macos specific configuration
