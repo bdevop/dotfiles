@@ -133,6 +133,14 @@ compinit
 export PATH="/Users/$USER/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+# pnpm
+export PNPM_HOME="/Users/brendan/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# end pnpm
+
 alias kitty="/Applications/kitty.app/Contents/MacOS/kitty"
 alias k="/Users/$USER/.rd/bin/kubectl"
 source <(kubectl completion zsh)
