@@ -111,6 +111,13 @@ fi
 alias k="/usr/bin/kubectl"
 alias chezmoi="/home/$USER/.local/bin/chezmoi"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#pnpm
+export PNPM_HOME="/home/brendan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+#end pnpm
 {{ end }}
 
 # macos specific configuration
